@@ -29,12 +29,22 @@ struct Activity {
     mapping(address => uint) joined; // 参与者 -> 金额
 }
 
+// 捐款记录
+struct JoinRecord {
+    uint ts;
+    uint activityId;
+    uint amount;
+}
+
 contract Crowdfunding2 {
     // 创作者
     address public author;
 
     // id => 众筹活动
     mapping(uint => Activity) public activities;
+
+    // 一个账户的所有捐款记录
+    mapping (address => JoinRecord[]) public joinRecords;
 
     // 当前众筹活动id
     uint public activityId = 0;
@@ -81,8 +91,13 @@ contract Crowdfunding2 {
         require(activity.endTime > block.timestamp, "a activity is expired");
         require(msg.value > 0, "a activity need money");
         require(msg.sender != activity.beneficiary, "a activity is author");
+
         activity.joined[msg.sender] += msg.value;
         activity.currentMoney += msg.value;
+
+        // 添加捐款记录
+        JoinRecord memory record = JoinRecord(block.timestamp, id, msg.value);
+        joinRecords[msg.sender].push(record);
     }
 
     // 作者提取资金
@@ -97,7 +112,7 @@ contract Crowdfunding2 {
         payable(msg.sender).transfer(activity.currentMoney);
     }
 
-    // 读者提取资金
+    // 读者退回资金
     function readerWithdraw() external {
         Activity storage activity = activities[activityId];
         require(activity.id != 0, "a activity not exist");
