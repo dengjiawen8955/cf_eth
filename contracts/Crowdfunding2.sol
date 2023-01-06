@@ -8,7 +8,7 @@ interface ICrowdfunding {
     // 查询众筹列表
     function getActivities() external view returns (uint[] memory);
     // 查询众筹详情
-    function getActivity(uint id) external view returns (uint, address, uint, uint, uint, bool);
+    function getActivity(uint id) external view returns (uint, address, uint, uint, uint, bool, string memory, string memory);
     // 参与众筹
     function join(uint id) external payable;
     // 作者提取资金
