@@ -68,8 +68,8 @@ contract Crowdfunding2 {
         newActivity.currentMoney = 0;
     }
 
-    // 查询众筹列表
-    function getActivities() external view returns (uint[] memory) {
+    // 查询众筹ID列表
+    function getActivitieIDs() external view returns (uint[] memory) {
         uint[] memory ids = new uint[](activityId);
         for (uint i = 0; i < activityId; i++) {
             ids[i] = i + 1;
@@ -78,9 +78,15 @@ contract Crowdfunding2 {
     }
 
     // 查询众筹详情
-    function getActivity(uint id) external view returns (uint, address, uint, uint, uint, bool, string memory, string memory) {
+    function getActivity(uint id) external view returns (bytes memory) {
         Activity storage activity = activities[id];
-        return (activity.id, activity.beneficiary, activity.targetMoney, activity.currentMoney, activity.endTime, activity.closed, activity.title, activity.desc);
+        require(activity.id != 0, "a activity not exist");
+        return abi.encode(activity.id, activity.beneficiary, activity.targetMoney, activity.currentMoney, activity.endTime, activity.closed, activity.title, activity.desc);
+    }
+
+    // 批量查询众筹详情
+    function getActivities(uint[] memory ids) external view returns (bytes memory) {
+        
     }
 
     // 读者参与众筹
@@ -123,5 +129,9 @@ contract Crowdfunding2 {
         payable(msg.sender).transfer(activity.joined[msg.sender]);
     }
     
+    // 查询读者的捐款记录
+    function getJoinRecords() external view returns (JoinRecord[] memory) {
+        return joinRecords[msg.sender];
+    }
 }
 
