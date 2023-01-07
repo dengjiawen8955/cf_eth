@@ -79,15 +79,13 @@ contract Crowdfunding2 {
 
     // 查询众筹详情
     function getActivity(uint id) external view returns (bytes memory) {
-        Activity storage activity = activities[id];
-        require(activity.id != 0, "a activity not exist");
-        return abi.encode(activity.id, activity.beneficiary, activity.targetMoney, activity.currentMoney, activity.endTime, activity.closed, activity.title, activity.desc);
-    }
-
-    // 批量查询众筹详情
-    function getActivities(uint[] memory ids) external view returns (bytes memory) {
         
     }
+
+    // // 批量查询众筹详情
+    // function getActivities(uint[] memory ids) external view returns (Activity[] memory) {
+        
+    // }
 
     // 读者参与众筹
     function readerJoin(uint id) external payable {
@@ -133,5 +131,6 @@ contract Crowdfunding2 {
     function getJoinRecords() external view returns (JoinRecord[] memory) {
         return joinRecords[msg.sender];
     }
+
 }
 
