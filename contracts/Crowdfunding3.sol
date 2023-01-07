@@ -17,6 +17,10 @@ interface ICrowdfunding3 {
     function authorWithdraw() external;
     // 读者退回资金
     function readerWithdraw() external;
+    // 查询个人捐款记录
+    function getPersonalJoinRecords() external view returns (JoinRecord[] memory);
+    // 查询个人发起的众筹活动
+    function getPersonalActivities() external view returns (Activity[] memory);
 }
 
 struct Activity {
@@ -53,6 +57,9 @@ contract Crowdfunding3 {
     // 个人捐款记录
     mapping(address => JoinRecord[]) public personalJoinRecords;
 
+    // 个人发起的众筹活动
+    mapping(address => uint[]) public personalActivities;
+
     constructor() {
         author = msg.sender;
     }
@@ -69,6 +76,9 @@ contract Crowdfunding3 {
         activity.endTime = block.timestamp + dayNum * 1 days;
         activity.closed = false;
         activity.joinRecordID = 0;
+
+        // 添加个人发起的众筹活动
+        personalActivities[msg.sender].push(activityID);
     }
 
     // 查询众筹ID列表
@@ -150,9 +160,14 @@ contract Crowdfunding3 {
         payable(msg.sender).transfer(amount);
     }
     
-    // 查询读者的捐款记录
+    // 查询个人的捐款记录
     function getPersonalJoinRecords() external view returns (JoinRecord[] memory) {
         return personalJoinRecords[msg.sender];
+    }
+
+    // 查询个人发起的众筹活动
+    function getPersonalActivities() external view returns (uint[] memory) {
+        return personalActivities[msg.sender];
     }
 }
 
