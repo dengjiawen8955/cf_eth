@@ -17,10 +17,8 @@ interface ICrowdfunding3 {
     function authorWithdraw() external;
     // 读者退回资金
     function readerWithdraw() external;
-    // 查询个人捐款记录
-    function getPersonalJoinRecords() external view returns (JoinRecord[] memory);
-    // 查询个人发起的众筹活动
-    function getPersonalActivities() external view returns (Activity[] memory);
+    // 查询个人的捐款记录和参与的众筹活动
+    function myRecords() external view returns (JoinRecord[] memory, uint[] memory);
 }
 
 struct Activity {
@@ -58,7 +56,7 @@ contract Crowdfunding3 {
     mapping(address => JoinRecord[]) public personalJoinRecords;
 
     // 个人发起的众筹活动
-    mapping(address => uint[]) public personalActivities;
+    mapping(address => uint[]) public personalActivitieRecords;
 
     constructor() {
         author = msg.sender;
@@ -78,7 +76,7 @@ contract Crowdfunding3 {
         activity.joinRecordID = 0;
 
         // 添加个人发起的众筹活动
-        personalActivities[msg.sender].push(activityID);
+        personalActivitieRecords[msg.sender].push(activityID);
     }
 
     // 查询众筹ID列表
@@ -150,24 +148,22 @@ contract Crowdfunding3 {
         require(activity.id != 0, "a activity not exist");                          // 需要众筹活动存在
         require(activity.closed == false, "a activity is closed");                  // 需要众筹活动未关闭
         require(activity.endTime < block.timestamp, "a activity is not expired");   // 需要众筹活动已过期
-        uint amount = 0;
+        uint sum = 0;
         for (uint i = 0; i < activity.joinRecords.length; i++) {
             if (activity.joinRecords[i].joiner == msg.sender) {
-                amount += activity.joinRecords[i].amount;
+                sum += activity.joinRecords[i].amount;
+                activity.joinRecords[i].amount = 0;                                 // 清理已经退回的金额
+                activity.joinRecords[i].comment = "reader withdraw";
             }
         }
-        require(amount > 0, "a activity is not join");
-        payable(msg.sender).transfer(amount);
+        require(sum > 0, "a activity is not join");
+        activity.currentMoney -= sum;
+        payable(msg.sender).transfer(sum);
     }
     
-    // 查询个人的捐款记录
-    function getPersonalJoinRecords() external view returns (JoinRecord[] memory) {
-        return personalJoinRecords[msg.sender];
-    }
-
-    // 查询个人发起的众筹活动
-    function getPersonalActivities() external view returns (uint[] memory) {
-        return personalActivities[msg.sender];
+    // 查询个人的捐款记录和参与的众筹活动
+    function myRecords() external view returns (JoinRecord[] memory, uint[] memory) {
+        return (personalJoinRecords[msg.sender], personalActivitieRecords[msg.sender]);
     }
 }
 
