@@ -14,9 +14,9 @@ interface ICrowdfunding3 {
     // 读者参与众筹
     function readerJoin(uint id, string memory comment) external payable;
     // 作者提取资金
-    function authorWithdraw() external;
+    function authorWithdraw(uint id) external;
     // 读者退回资金
-    function readerWithdraw() external;
+    function readerWithdraw(uint aid, uint recordID) external;
     // 查询个人的捐款记录和参与的众筹活动
     function myRecords() external view returns (JoinRecord[] memory, uint[] memory);
 }
@@ -143,22 +143,23 @@ contract Crowdfunding3 {
     }
 
     // 读者退回资金
-    function readerWithdraw(uint id) external {
-        Activity storage activity = activities[id];
+    function readerWithdraw(uint aid, uint recordID) external {
+        Activity storage activity = activities[aid];
         require(activity.id != 0, "a activity not exist");                          // 需要众筹活动存在
         require(activity.closed == false, "a activity is closed");                  // 需要众筹活动未关闭
         require(activity.endTime < block.timestamp, "a activity is not expired");   // 需要众筹活动已过期
-        uint sum = 0;
-        for (uint i = 0; i < activity.joinRecords.length; i++) {
-            if (activity.joinRecords[i].joiner == msg.sender) {
-                sum += activity.joinRecords[i].amount;
-                activity.joinRecords[i].amount = 0;                                 // 清理已经退回的金额
-                activity.joinRecords[i].comment = "reader withdraw";
-            }
-        }
-        require(sum > 0, "a activity is not join");
-        activity.currentMoney -= sum;
-        payable(msg.sender).transfer(sum);
+        uint recordIdx = recordID - 1;
+        
+        require(recordIdx < activity.joinRecords.length, "a record not exist");     // 需要该 record 记录存在
+        JoinRecord storage record = activity.joinRecords[recordIdx];
+        
+        require(record.joiner == msg.sender, "a record is not reader");             // 需要是读者自己提取资金
+        require(record.amount > 0, "a record is withdrawed");                       // 需要该 record 记录未提取过资金
+
+        uint amount = record.amount;
+        record.amount = 0;
+        activity.currentMoney -= amount;
+        payable(msg.sender).transfer(amount);
     }
     
     // 查询个人的捐款记录和参与的众筹活动
