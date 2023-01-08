@@ -11,8 +11,8 @@ interface ICrowdfunding3 {
     function getActivity(uint id) external view returns (Activity memory);
     // 批量查询众筹详情
     function getActivities(uint[] memory ids) external view returns (Activity[] memory);
-    // 参与众筹
-    function join(uint id, string memory comment) external payable;
+    // 读者参与众筹
+    function readerJoin(uint id, string memory comment) external payable;
     // 作者提取资金
     function authorWithdraw() external;
     // 读者退回资金

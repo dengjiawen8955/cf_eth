@@ -316,7 +316,7 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"authorWithdraw\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"targetMoney\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"dayNum\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"data\",\"type\":\"string\"}],\"name\":\"createActivity\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getActivitieIDs\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256[]\",\"name\":\"ids\",\"type\":\"uint256[]\"}],\"name\":\"getActivities\",\"outputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"beneficiary\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"data\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"targetMoney\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"currentMoney\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"endTime\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"closed\",\"type\":\"bool\"},{\"internalType\":\"uint256\",\"name\":\"joinRecordID\",\"type\":\"uint256\"},{\"components\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"activityID\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"joiner\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"ts\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"comment\",\"type\":\"string\"}],\"internalType\":\"struct JoinRecord[]\",\"name\":\"joinRecords\",\"type\":\"tuple[]\"}],\"internalType\":\"struct Activity[]\",\"name\":\"\",\"type\":\"tuple[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"}],\"name\":\"getActivity\",\"outputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"beneficiary\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"data\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"targetMoney\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"currentMoney\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"endTime\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"closed\",\"type\":\"bool\"},{\"internalType\":\"uint256\",\"name\":\"joinRecordID\",\"type\":\"uint256\"},{\"components\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"activityID\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"joiner\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"ts\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"comment\",\"type\":\"string\"}],\"internalType\":\"struct JoinRecord[]\",\"name\":\"joinRecords\",\"type\":\"tuple[]\"}],\"internalType\":\"struct Activity\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"comment\",\"type\":\"string\"}],\"name\":\"join\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"myRecords\",\"outputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"activityID\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"joiner\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"ts\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"comment\",\"type\":\"string\"}],\"internalType\":\"struct JoinRecord[]\",\"name\":\"\",\"type\":\"tuple[]\"},{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"readerWithdraw\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Crowdfunding3.sol\":\"ICrowdfunding3\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Crowdfunding3.sol\":{\"keccak256\":\"0x166e5eaf7bc4fe92bc1c00d671ad756246181ec8050e5975cd388dfad5ed8642\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://5cab3ef0addf28209848697cddbb7ec14f4821ab1eaad2739aa139cd35599721\",\"dweb:/ipfs/QmQXP9jt8ZGyGh3mp7S5S2MHAh7asCgiCV4shjrRzhQn8f\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"authorWithdraw\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"targetMoney\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"dayNum\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"data\",\"type\":\"string\"}],\"name\":\"createActivity\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getActivitieIDs\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256[]\",\"name\":\"ids\",\"type\":\"uint256[]\"}],\"name\":\"getActivities\",\"outputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"beneficiary\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"data\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"targetMoney\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"currentMoney\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"endTime\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"closed\",\"type\":\"bool\"},{\"internalType\":\"uint256\",\"name\":\"joinRecordID\",\"type\":\"uint256\"},{\"components\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"activityID\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"joiner\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"ts\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"comment\",\"type\":\"string\"}],\"internalType\":\"struct JoinRecord[]\",\"name\":\"joinRecords\",\"type\":\"tuple[]\"}],\"internalType\":\"struct Activity[]\",\"name\":\"\",\"type\":\"tuple[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"}],\"name\":\"getActivity\",\"outputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"beneficiary\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"data\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"targetMoney\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"currentMoney\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"endTime\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"closed\",\"type\":\"bool\"},{\"internalType\":\"uint256\",\"name\":\"joinRecordID\",\"type\":\"uint256\"},{\"components\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"activityID\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"joiner\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"ts\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"comment\",\"type\":\"string\"}],\"internalType\":\"struct JoinRecord[]\",\"name\":\"joinRecords\",\"type\":\"tuple[]\"}],\"internalType\":\"struct Activity\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"comment\",\"type\":\"string\"}],\"name\":\"join\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"myRecords\",\"outputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"activityID\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"joiner\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"ts\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"comment\",\"type\":\"string\"}],\"internalType\":\"struct JoinRecord[]\",\"name\":\"\",\"type\":\"tuple[]\"},{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"readerWithdraw\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Crowdfunding3.sol\":\"ICrowdfunding3\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Crowdfunding3.sol\":{\"keccak256\":\"0x0eeeb87e00d310744a80320566a3badcc8b28c6002503f78e05635e5ed9bdff8\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://c29e73642de85f4bb2fa8f5e17e0b1ab5dbe1d9aae50f08e90983c74adffa1e8\",\"dweb:/ipfs/Qmd6qaHFL5HL69j43nMAS1kv89RmiuPdaH5aL8Mwux8E3D\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
@@ -324,7 +324,7 @@
   "deployedGeneratedSources": [],
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "// SPDX-License-Identifier: GPL-3.0\n\npragma solidity >=0.7.0 <0.9.0;\n\ninterface ICrowdfunding3 {\n    // 发起一个众筹\n    function createActivity(uint targetMoney, uint dayNum, string memory data) external;\n    // 查询众筹ID列表\n    function getActivitieIDs() external view returns (uint[] memory);\n    // 查询众筹详情\n    function getActivity(uint id) external view returns (Activity memory);\n    // 批量查询众筹详情\n    function getActivities(uint[] memory ids) external view returns (Activity[] memory);\n    // 参与众筹\n    function join(uint id, string memory comment) external payable;\n    // 作者提取资金\n    function authorWithdraw() external;\n    // 读者退回资金\n    function readerWithdraw() external;\n    // 查询个人的捐款记录和参与的众筹活动\n    function myRecords() external view returns (JoinRecord[] memory, uint[] memory);\n}\n\nstruct Activity {\n    uint id;\n    address beneficiary;      // 发起人, 受益人\n    string data;              // 直接标题描述或者数据hash\n    uint targetMoney;         // 目标金额, wei\n    uint currentMoney;        // 当前金额, wei\n    uint endTime;             // 截止时间\n    bool closed;              // 是否关闭\n    uint joinRecordID;        // 捐款记录id  \n    JoinRecord[] joinRecords; // 捐款记录\n}\n\n// 捐款记录\nstruct JoinRecord {\n    uint id;\n    uint activityID;     // 捐款活动id\n    address joiner; // 捐款人\n    uint ts;        // 捐款时间\n    uint amount;    // 捐款金额\n    string comment; // 捐款留言\n}\n\ncontract Crowdfunding3 {\n    // 合约创作者\n    address public author;\n\n    // 所有众筹活动\n    // activityID => 众筹活动\n    uint public activityID = 0;\n    mapping(uint => Activity) public activities;\n\n    // 个人捐款记录\n    mapping(address => JoinRecord[]) public personalJoinRecords;\n\n    // 个人发起的众筹活动\n    mapping(address => uint[]) public personalActivitieRecords;\n\n    constructor() {\n        author = msg.sender;\n    }\n\n    // 发起一个众筹\n    function createActivity(uint targetMoney, uint dayNum, string memory data) external {\n        activityID++;\n        Activity storage activity = activities[activityID];\n        activity.id = activityID;\n        activity.beneficiary = msg.sender;\n        activity.data = data;\n        activity.targetMoney = targetMoney;\n        activity.currentMoney = 0;\n        activity.endTime = block.timestamp + dayNum * 1 days;\n        activity.closed = false;\n        activity.joinRecordID = 0;\n\n        // 添加个人发起的众筹活动\n        personalActivitieRecords[msg.sender].push(activityID);\n    }\n\n    // 查询众筹ID列表\n    function getActivitieIDs() external view returns (uint[] memory) {\n        uint[] memory ids = new uint[](activityID);\n        for (uint i = 0; i < activityID; i++) {\n            ids[i] = i + 1;\n        }\n        return ids;\n    }\n\n    // 查询众筹详情\n    function getActivity(uint id) external view returns (Activity memory) {\n        return activities[id];\n    }\n\n    // 批量查询众筹详情\n    function getActivities(uint[] memory ids) external view returns (Activity[] memory) {\n        Activity[] memory ret = new Activity[](ids.length);\n        for (uint i = 0; i < ids.length; i++) {\n            ret[i] = activities[ids[i]];\n        }\n        return ret;\n    }\n\n    // 读者参与众筹\n    function readerJoin(uint id, string memory comment) external payable {\n        Activity storage activity = activities[id];\n        require(activity.id != 0, \"a activity not exist\");                     // 需要众筹活动存在\n        require(activity.closed == false, \"a activity is closed\");             // 需要众筹活动未关闭 \n        require(activity.endTime > block.timestamp, \"a activity is expired\");  // 需要众筹活动未过期\n        require(msg.value > 0, \"a activity need money\");                       // 需要捐款金额大于0\n        // require(msg.sender != activity.beneficiary, \"a activity is author\");   // 需要不是作者自己捐款\n\n        // 添加读者捐款记录\n        activity.joinRecordID++;\n        JoinRecord memory record = JoinRecord({\n            id: activity.joinRecordID,\n            activityID: id,\n            joiner: msg.sender,\n            ts: block.timestamp,\n            amount: msg.value,\n            comment: comment\n        });\n        activity.joinRecords.push(record);\n        activity.currentMoney += msg.value;\n\n        // 个人捐款记录\n        personalJoinRecords[msg.sender].push(record);\n    }\n\n    // 作者提取资金\n    function authorWithdraw(uint id) external {\n        Activity storage activity = activities[id];\n        require(activity.id != 0, \"a activity not exist\");                                                // 需要众筹活动存在\n        require(activity.closed == false, \"a activity is closed\");                                        // 需要众筹活动未关闭\n        // require(activity.endTime < block.timestamp, \"a activity is not expired\");                      // 需要众筹活动已过期\n\n        require(activity.beneficiary == msg.sender, \"a activity is not author\");                          // 需要是作者自己提取资金\n        require(activity.currentMoney >= activity.targetMoney, \"a activity is not reach target money\");   // 需要众筹金额达到目标金额\n\n        activity.closed = true;\n        payable(msg.sender).transfer(activity.currentMoney);\n    }\n\n    // 读者退回资金\n    function readerWithdraw(uint id) external {\n        Activity storage activity = activities[id];\n        require(activity.id != 0, \"a activity not exist\");                          // 需要众筹活动存在\n        require(activity.closed == false, \"a activity is closed\");                  // 需要众筹活动未关闭\n        require(activity.endTime < block.timestamp, \"a activity is not expired\");   // 需要众筹活动已过期\n        uint amount = 0;\n        for (uint i = 0; i < activity.joinRecords.length; i++) {\n            if (activity.joinRecords[i].joiner == msg.sender) {\n                amount += activity.joinRecords[i].amount;\n            }\n        }\n        require(amount > 0, \"a activity is not join\");\n        payable(msg.sender).transfer(amount);\n    }\n    \n    // 查询个人的捐款记录和参与的众筹活动\n    function myRecords() external view returns (JoinRecord[] memory, uint[] memory) {\n        return (personalJoinRecords[msg.sender], personalActivitieRecords[msg.sender]);\n    }\n}\n\n",
+  "source": "// SPDX-License-Identifier: GPL-3.0\n\npragma solidity >=0.7.0 <0.9.0;\n\ninterface ICrowdfunding3 {\n    // 发起一个众筹\n    function createActivity(uint targetMoney, uint dayNum, string memory data) external;\n    // 查询众筹ID列表\n    function getActivitieIDs() external view returns (uint[] memory);\n    // 查询众筹详情\n    function getActivity(uint id) external view returns (Activity memory);\n    // 批量查询众筹详情\n    function getActivities(uint[] memory ids) external view returns (Activity[] memory);\n    // 参与众筹\n    function join(uint id, string memory comment) external payable;\n    // 作者提取资金\n    function authorWithdraw() external;\n    // 读者退回资金\n    function readerWithdraw() external;\n    // 查询个人的捐款记录和参与的众筹活动\n    function myRecords() external view returns (JoinRecord[] memory, uint[] memory);\n}\n\nstruct Activity {\n    uint id;\n    address beneficiary;      // 发起人, 受益人\n    string data;              // 直接标题描述或者数据hash\n    uint targetMoney;         // 目标金额, wei\n    uint currentMoney;        // 当前金额, wei\n    uint endTime;             // 截止时间\n    bool closed;              // 是否关闭\n    uint joinRecordID;        // 捐款记录id  \n    JoinRecord[] joinRecords; // 捐款记录\n}\n\n// 捐款记录\nstruct JoinRecord {\n    uint id;\n    uint activityID;     // 捐款活动id\n    address joiner; // 捐款人\n    uint ts;        // 捐款时间\n    uint amount;    // 捐款金额\n    string comment; // 捐款留言\n}\n\ncontract Crowdfunding3 {\n    // 合约创作者\n    address public author;\n\n    // 所有众筹活动\n    // activityID => 众筹活动\n    uint public activityID = 0;\n    mapping(uint => Activity) public activities;\n\n    // 个人捐款记录\n    mapping(address => JoinRecord[]) public personalJoinRecords;\n\n    // 个人发起的众筹活动\n    mapping(address => uint[]) public personalActivitieRecords;\n\n    constructor() {\n        author = msg.sender;\n    }\n\n    // 发起一个众筹\n    function createActivity(uint targetMoney, uint dayNum, string memory data) external {\n        activityID++;\n        Activity storage activity = activities[activityID];\n        activity.id = activityID;\n        activity.beneficiary = msg.sender;\n        activity.data = data;\n        activity.targetMoney = targetMoney;\n        activity.currentMoney = 0;\n        activity.endTime = block.timestamp + dayNum * 1 days;\n        activity.closed = false;\n        activity.joinRecordID = 0;\n\n        // 添加个人发起的众筹活动\n        personalActivitieRecords[msg.sender].push(activityID);\n    }\n\n    // 查询众筹ID列表\n    function getActivitieIDs() external view returns (uint[] memory) {\n        uint[] memory ids = new uint[](activityID);\n        for (uint i = 0; i < activityID; i++) {\n            ids[i] = i + 1;\n        }\n        return ids;\n    }\n\n    // 查询众筹详情\n    function getActivity(uint id) external view returns (Activity memory) {\n        return activities[id];\n    }\n\n    // 批量查询众筹详情\n    function getActivities(uint[] memory ids) external view returns (Activity[] memory) {\n        Activity[] memory ret = new Activity[](ids.length);\n        for (uint i = 0; i < ids.length; i++) {\n            ret[i] = activities[ids[i]];\n        }\n        return ret;\n    }\n\n    // 读者参与众筹\n    function readerJoin(uint id, string memory comment) external payable {\n        Activity storage activity = activities[id];\n        require(activity.id != 0, \"a activity not exist\");                     // 需要众筹活动存在\n        require(activity.closed == false, \"a activity is closed\");             // 需要众筹活动未关闭 \n        require(activity.endTime > block.timestamp, \"a activity is expired\");  // 需要众筹活动未过期\n        require(msg.value > 0, \"a activity need money\");                       // 需要捐款金额大于0\n        // require(msg.sender != activity.beneficiary, \"a activity is author\");   // 需要不是作者自己捐款\n\n        // 添加读者捐款记录\n        activity.joinRecordID++;\n        JoinRecord memory record = JoinRecord({\n            id: activity.joinRecordID,\n            activityID: id,\n            joiner: msg.sender,\n            ts: block.timestamp,\n            amount: msg.value,\n            comment: comment\n        });\n        activity.joinRecords.push(record);\n        activity.currentMoney += msg.value;\n\n        // 个人捐款记录\n        personalJoinRecords[msg.sender].push(record);\n    }\n\n    // 作者提取资金\n    function authorWithdraw(uint id) external {\n        Activity storage activity = activities[id];\n        require(activity.id != 0, \"a activity not exist\");                                                // 需要众筹活动存在\n        require(activity.closed == false, \"a activity is closed\");                                        // 需要众筹活动未关闭\n        // require(activity.endTime < block.timestamp, \"a activity is not expired\");                      // 需要众筹活动已过期\n\n        require(activity.beneficiary == msg.sender, \"a activity is not author\");                          // 需要是作者自己提取资金\n        require(activity.currentMoney >= activity.targetMoney, \"a activity is not reach target money\");   // 需要众筹金额达到目标金额\n\n        activity.closed = true;\n        payable(msg.sender).transfer(activity.currentMoney);\n    }\n\n    // 读者退回资金\n    function readerWithdraw(uint id) external {\n        Activity storage activity = activities[id];\n        require(activity.id != 0, \"a activity not exist\");                          // 需要众筹活动存在\n        require(activity.closed == false, \"a activity is closed\");                  // 需要众筹活动未关闭\n        require(activity.endTime < block.timestamp, \"a activity is not expired\");   // 需要众筹活动已过期\n        uint sum = 0;\n        for (uint i = 0; i < activity.joinRecords.length; i++) {\n            if (activity.joinRecords[i].joiner == msg.sender) {\n                sum += activity.joinRecords[i].amount;\n                activity.joinRecords[i].amount = 0;                                 // 清理已经退回的金额\n                activity.joinRecords[i].comment = \"reader withdraw\";\n            }\n        }\n        require(sum > 0, \"a activity is not join\");\n        activity.currentMoney -= sum;\n        payable(msg.sender).transfer(sum);\n    }\n    \n    // 查询个人的捐款记录和参与的众筹活动\n    function myRecords() external view returns (JoinRecord[] memory, uint[] memory) {\n        return (personalJoinRecords[msg.sender], personalActivitieRecords[msg.sender]);\n    }\n}\n\n",
   "sourcePath": "/root/workspace/work2/cf_eth/contracts/Crowdfunding3.sol",
   "ast": {
     "absolutePath": "project:/contracts/Crowdfunding3.sol",
@@ -333,7 +333,7 @@
         79
       ],
       "Crowdfunding3": [
-        573
+        597
       ],
       "ICrowdfunding3": [
         58
@@ -342,7 +342,7 @@
         92
       ]
     },
-    "id": 574,
+    "id": 598,
     "license": "GPL-3.0",
     "nodeType": "SourceUnit",
     "nodes": [
@@ -999,7 +999,7 @@
             "visibility": "external"
           }
         ],
-        "scope": 574,
+        "scope": 598,
         "src": "70:827:0",
         "usedErrors": []
       },
@@ -1274,7 +1274,7 @@
         "name": "Activity",
         "nameLocation": "906:8:0",
         "nodeType": "StructDefinition",
-        "scope": 574,
+        "scope": 598,
         "src": "899:444:0",
         "visibility": "public"
       },
@@ -1449,7 +1449,7 @@
         "name": "JoinRecord",
         "nameLocation": "1368:10:0",
         "nodeType": "StructDefinition",
-        "scope": 574,
+        "scope": 598,
         "src": "1361:218:0",
         "visibility": "public"
       },
@@ -1460,9 +1460,9 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 573,
+        "id": 597,
         "linearizedBaseContracts": [
-          573
+          597
         ],
         "name": "Crowdfunding3",
         "nameLocation": "1590:13:0",
@@ -1476,7 +1476,7 @@
             "name": "author",
             "nameLocation": "1648:6:0",
             "nodeType": "VariableDeclaration",
-            "scope": 573,
+            "scope": 597,
             "src": "1633:21:0",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1505,7 +1505,7 @@
             "name": "activityID",
             "nameLocation": "1733:10:0",
             "nodeType": "VariableDeclaration",
-            "scope": 573,
+            "scope": 597,
             "src": "1721:26:0",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1549,7 +1549,7 @@
             "name": "activities",
             "nameLocation": "1786:10:0",
             "nodeType": "VariableDeclaration",
-            "scope": 573,
+            "scope": 597,
             "src": "1753:43:0",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1606,7 +1606,7 @@
             "name": "personalJoinRecords",
             "nameLocation": "1869:19:0",
             "nodeType": "VariableDeclaration",
-            "scope": 573,
+            "scope": 597,
             "src": "1829:59:0",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1672,7 +1672,7 @@
             "name": "personalActivitieRecords",
             "nameLocation": "1964:24:0",
             "nodeType": "VariableDeclaration",
-            "scope": 573,
+            "scope": 597,
             "src": "1930:58:0",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1805,7 +1805,7 @@
               "parameters": [],
               "src": "2009:0:0"
             },
-            "scope": 573,
+            "scope": 597,
             "src": "1995:50:0",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -2725,7 +2725,7 @@
               "parameters": [],
               "src": "2161:0:0"
             },
-            "scope": 573,
+            "scope": 597,
             "src": "2077:598:0",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -3170,7 +3170,7 @@
               ],
               "src": "2758:15:0"
             },
-            "scope": 573,
+            "scope": 597,
             "src": "2709:230:0",
             "stateMutability": "view",
             "virtual": false,
@@ -3313,7 +3313,7 @@
               ],
               "src": "3023:17:0"
             },
-            "scope": 573,
+            "scope": 597,
             "src": "2971:108:0",
             "stateMutability": "view",
             "virtual": false,
@@ -3871,7 +3871,7 @@
               ],
               "src": "3181:19:0"
             },
-            "scope": 573,
+            "scope": 597,
             "src": "3117:270:0",
             "stateMutability": "view",
             "virtual": false,
@@ -5129,7 +5129,7 @@
               "parameters": [],
               "src": "3488:0:0"
             },
-            "scope": 573,
+            "scope": 597,
             "src": "3419:1174:0",
             "stateMutability": "payable",
             "virtual": false,
@@ -6015,7 +6015,7 @@
               "parameters": [],
               "src": "4667:0:0"
             },
-            "scope": 573,
+            "scope": 597,
             "src": "4625:893:0",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -6023,9 +6023,9 @@
           },
           {
             "body": {
-              "id": 550,
+              "id": 574,
               "nodeType": "Block",
-              "src": "5592:738:0",
+              "src": "5592:948:0",
               "statements": [
                 {
                   "assignments": [
@@ -6039,7 +6039,7 @@
                       "name": "activity",
                       "nameLocation": "5619:8:0",
                       "nodeType": "VariableDeclaration",
-                      "scope": 550,
+                      "scope": 574,
                       "src": "5602:25:0",
                       "stateVariable": false,
                       "storageLocation": "storage",
@@ -6512,11 +6512,11 @@
                       "constant": false,
                       "id": 499,
                       "mutability": "mutable",
-                      "name": "amount",
-                      "nameLocation": "6001:6:0",
+                      "name": "sum",
+                      "nameLocation": "6001:3:0",
                       "nodeType": "VariableDeclaration",
-                      "scope": 550,
-                      "src": "5996:11:0",
+                      "scope": 574,
+                      "src": "5996:8:0",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
@@ -6546,7 +6546,7 @@
                     "kind": "number",
                     "lValueRequested": false,
                     "nodeType": "Literal",
-                    "src": "6010:1:0",
+                    "src": "6007:1:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_rational_0_by_1",
                       "typeString": "int_const 0"
@@ -6554,13 +6554,13 @@
                     "value": "0"
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "5996:15:0"
+                  "src": "5996:12:0"
                 },
                 {
                   "body": {
-                    "id": 532,
+                    "id": 550,
                     "nodeType": "Block",
-                    "src": "6076:147:0",
+                    "src": "6073:328:0",
                     "statements": [
                       {
                         "condition": {
@@ -6582,7 +6582,7 @@
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
                                   "referencedDeclaration": 468,
-                                  "src": "6094:8:0",
+                                  "src": "6091:8:0",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_struct$_Activity_$79_storage_ptr",
                                     "typeString": "struct Activity storage pointer"
@@ -6593,11 +6593,11 @@
                                 "isLValue": true,
                                 "isPure": false,
                                 "lValueRequested": false,
-                                "memberLocation": "6103:11:0",
+                                "memberLocation": "6100:11:0",
                                 "memberName": "joinRecords",
                                 "nodeType": "MemberAccess",
                                 "referencedDeclaration": 78,
-                                "src": "6094:20:0",
+                                "src": "6091:20:0",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_array$_t_struct$_JoinRecord_$92_storage_$dyn_storage",
                                   "typeString": "struct JoinRecord storage ref[] storage ref"
@@ -6610,7 +6610,7 @@
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
                                 "referencedDeclaration": 503,
-                                "src": "6115:1:0",
+                                "src": "6112:1:0",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_uint256",
                                   "typeString": "uint256"
@@ -6621,7 +6621,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "nodeType": "IndexAccess",
-                              "src": "6094:23:0",
+                              "src": "6091:23:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_struct$_JoinRecord_$92_storage",
                                 "typeString": "struct JoinRecord storage ref"
@@ -6632,11 +6632,11 @@
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": false,
-                            "memberLocation": "6118:6:0",
+                            "memberLocation": "6115:6:0",
                             "memberName": "joiner",
                             "nodeType": "MemberAccess",
                             "referencedDeclaration": 85,
-                            "src": "6094:30:0",
+                            "src": "6091:30:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address",
                               "typeString": "address"
@@ -6651,7 +6651,7 @@
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
                               "referencedDeclaration": 4294967281,
-                              "src": "6128:3:0",
+                              "src": "6125:3:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
                                 "typeString": "msg"
@@ -6662,28 +6662,28 @@
                             "isLValue": false,
                             "isPure": false,
                             "lValueRequested": false,
-                            "memberLocation": "6132:6:0",
+                            "memberLocation": "6129:6:0",
                             "memberName": "sender",
                             "nodeType": "MemberAccess",
-                            "src": "6128:10:0",
+                            "src": "6125:10:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address",
                               "typeString": "address"
                             }
                           },
-                          "src": "6094:44:0",
+                          "src": "6091:44:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bool",
                             "typeString": "bool"
                           }
                         },
-                        "id": 531,
+                        "id": 549,
                         "nodeType": "IfStatement",
-                        "src": "6090:123:0",
+                        "src": "6087:304:0",
                         "trueBody": {
-                          "id": 530,
+                          "id": 548,
                           "nodeType": "Block",
-                          "src": "6140:73:0",
+                          "src": "6137:254:0",
                           "statements": [
                             {
                               "expression": {
@@ -6694,11 +6694,11 @@
                                 "lValueRequested": false,
                                 "leftHandSide": {
                                   "id": 522,
-                                  "name": "amount",
+                                  "name": "sum",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
                                   "referencedDeclaration": 499,
-                                  "src": "6158:6:0",
+                                  "src": "6155:3:0",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_uint256",
                                     "typeString": "uint256"
@@ -6715,7 +6715,7 @@
                                         "nodeType": "Identifier",
                                         "overloadedDeclarations": [],
                                         "referencedDeclaration": 468,
-                                        "src": "6168:8:0",
+                                        "src": "6162:8:0",
                                         "typeDescriptions": {
                                           "typeIdentifier": "t_struct$_Activity_$79_storage_ptr",
                                           "typeString": "struct Activity storage pointer"
@@ -6726,11 +6726,11 @@
                                       "isLValue": true,
                                       "isPure": false,
                                       "lValueRequested": false,
-                                      "memberLocation": "6177:11:0",
+                                      "memberLocation": "6171:11:0",
                                       "memberName": "joinRecords",
                                       "nodeType": "MemberAccess",
                                       "referencedDeclaration": 78,
-                                      "src": "6168:20:0",
+                                      "src": "6162:20:0",
                                       "typeDescriptions": {
                                         "typeIdentifier": "t_array$_t_struct$_JoinRecord_$92_storage_$dyn_storage",
                                         "typeString": "struct JoinRecord storage ref[] storage ref"
@@ -6743,7 +6743,7 @@
                                       "nodeType": "Identifier",
                                       "overloadedDeclarations": [],
                                       "referencedDeclaration": 503,
-                                      "src": "6189:1:0",
+                                      "src": "6183:1:0",
                                       "typeDescriptions": {
                                         "typeIdentifier": "t_uint256",
                                         "typeString": "uint256"
@@ -6754,7 +6754,7 @@
                                     "isPure": false,
                                     "lValueRequested": false,
                                     "nodeType": "IndexAccess",
-                                    "src": "6168:23:0",
+                                    "src": "6162:23:0",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_struct$_JoinRecord_$92_storage",
                                       "typeString": "struct JoinRecord storage ref"
@@ -6765,17 +6765,17 @@
                                   "isLValue": true,
                                   "isPure": false,
                                   "lValueRequested": false,
-                                  "memberLocation": "6192:6:0",
+                                  "memberLocation": "6186:6:0",
                                   "memberName": "amount",
                                   "nodeType": "MemberAccess",
                                   "referencedDeclaration": 89,
-                                  "src": "6168:30:0",
+                                  "src": "6162:30:0",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_uint256",
                                     "typeString": "uint256"
                                   }
                                 },
-                                "src": "6158:40:0",
+                                "src": "6155:37:0",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_uint256",
                                   "typeString": "uint256"
@@ -6783,7 +6783,215 @@
                               },
                               "id": 529,
                               "nodeType": "ExpressionStatement",
-                              "src": "6158:40:0"
+                              "src": "6155:37:0"
+                            },
+                            {
+                              "expression": {
+                                "id": 537,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": false,
+                                "lValueRequested": false,
+                                "leftHandSide": {
+                                  "expression": {
+                                    "baseExpression": {
+                                      "expression": {
+                                        "id": 530,
+                                        "name": "activity",
+                                        "nodeType": "Identifier",
+                                        "overloadedDeclarations": [],
+                                        "referencedDeclaration": 468,
+                                        "src": "6210:8:0",
+                                        "typeDescriptions": {
+                                          "typeIdentifier": "t_struct$_Activity_$79_storage_ptr",
+                                          "typeString": "struct Activity storage pointer"
+                                        }
+                                      },
+                                      "id": 533,
+                                      "isConstant": false,
+                                      "isLValue": true,
+                                      "isPure": false,
+                                      "lValueRequested": false,
+                                      "memberLocation": "6219:11:0",
+                                      "memberName": "joinRecords",
+                                      "nodeType": "MemberAccess",
+                                      "referencedDeclaration": 78,
+                                      "src": "6210:20:0",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_array$_t_struct$_JoinRecord_$92_storage_$dyn_storage",
+                                        "typeString": "struct JoinRecord storage ref[] storage ref"
+                                      }
+                                    },
+                                    "id": 534,
+                                    "indexExpression": {
+                                      "id": 532,
+                                      "name": "i",
+                                      "nodeType": "Identifier",
+                                      "overloadedDeclarations": [],
+                                      "referencedDeclaration": 503,
+                                      "src": "6231:1:0",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                      }
+                                    },
+                                    "isConstant": false,
+                                    "isLValue": true,
+                                    "isPure": false,
+                                    "lValueRequested": false,
+                                    "nodeType": "IndexAccess",
+                                    "src": "6210:23:0",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_struct$_JoinRecord_$92_storage",
+                                      "typeString": "struct JoinRecord storage ref"
+                                    }
+                                  },
+                                  "id": 535,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": true,
+                                  "memberLocation": "6234:6:0",
+                                  "memberName": "amount",
+                                  "nodeType": "MemberAccess",
+                                  "referencedDeclaration": 89,
+                                  "src": "6210:30:0",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                  }
+                                },
+                                "nodeType": "Assignment",
+                                "operator": "=",
+                                "rightHandSide": {
+                                  "hexValue": "30",
+                                  "id": 536,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "kind": "number",
+                                  "lValueRequested": false,
+                                  "nodeType": "Literal",
+                                  "src": "6243:1:0",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_rational_0_by_1",
+                                    "typeString": "int_const 0"
+                                  },
+                                  "value": "0"
+                                },
+                                "src": "6210:34:0",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              },
+                              "id": 538,
+                              "nodeType": "ExpressionStatement",
+                              "src": "6210:34:0"
+                            },
+                            {
+                              "expression": {
+                                "id": 546,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": false,
+                                "lValueRequested": false,
+                                "leftHandSide": {
+                                  "expression": {
+                                    "baseExpression": {
+                                      "expression": {
+                                        "id": 539,
+                                        "name": "activity",
+                                        "nodeType": "Identifier",
+                                        "overloadedDeclarations": [],
+                                        "referencedDeclaration": 468,
+                                        "src": "6325:8:0",
+                                        "typeDescriptions": {
+                                          "typeIdentifier": "t_struct$_Activity_$79_storage_ptr",
+                                          "typeString": "struct Activity storage pointer"
+                                        }
+                                      },
+                                      "id": 542,
+                                      "isConstant": false,
+                                      "isLValue": true,
+                                      "isPure": false,
+                                      "lValueRequested": false,
+                                      "memberLocation": "6334:11:0",
+                                      "memberName": "joinRecords",
+                                      "nodeType": "MemberAccess",
+                                      "referencedDeclaration": 78,
+                                      "src": "6325:20:0",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_array$_t_struct$_JoinRecord_$92_storage_$dyn_storage",
+                                        "typeString": "struct JoinRecord storage ref[] storage ref"
+                                      }
+                                    },
+                                    "id": 543,
+                                    "indexExpression": {
+                                      "id": 541,
+                                      "name": "i",
+                                      "nodeType": "Identifier",
+                                      "overloadedDeclarations": [],
+                                      "referencedDeclaration": 503,
+                                      "src": "6346:1:0",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                      }
+                                    },
+                                    "isConstant": false,
+                                    "isLValue": true,
+                                    "isPure": false,
+                                    "lValueRequested": false,
+                                    "nodeType": "IndexAccess",
+                                    "src": "6325:23:0",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_struct$_JoinRecord_$92_storage",
+                                      "typeString": "struct JoinRecord storage ref"
+                                    }
+                                  },
+                                  "id": 544,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": true,
+                                  "memberLocation": "6349:7:0",
+                                  "memberName": "comment",
+                                  "nodeType": "MemberAccess",
+                                  "referencedDeclaration": 91,
+                                  "src": "6325:31:0",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_string_storage",
+                                    "typeString": "string storage ref"
+                                  }
+                                },
+                                "nodeType": "Assignment",
+                                "operator": "=",
+                                "rightHandSide": {
+                                  "hexValue": "726561646572207769746864726177",
+                                  "id": 545,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "kind": "string",
+                                  "lValueRequested": false,
+                                  "nodeType": "Literal",
+                                  "src": "6359:17:0",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_stringliteral_568fa6916e968d2133f2f4ed839ba02870fa66ecf3f567bcdf79ec4821387647",
+                                    "typeString": "literal_string \"reader withdraw\""
+                                  },
+                                  "value": "reader withdraw"
+                                },
+                                "src": "6325:51:0",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_string_storage",
+                                  "typeString": "string storage ref"
+                                }
+                              },
+                              "id": 547,
+                              "nodeType": "ExpressionStatement",
+                              "src": "6325:51:0"
                             }
                           ]
                         }
@@ -6806,7 +7014,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 503,
-                      "src": "6038:1:0",
+                      "src": "6035:1:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -6822,7 +7030,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 468,
-                          "src": "6042:8:0",
+                          "src": "6039:8:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_Activity_$79_storage_ptr",
                             "typeString": "struct Activity storage pointer"
@@ -6833,11 +7041,11 @@
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
-                        "memberLocation": "6051:11:0",
+                        "memberLocation": "6048:11:0",
                         "memberName": "joinRecords",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": 78,
-                        "src": "6042:20:0",
+                        "src": "6039:20:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_struct$_JoinRecord_$92_storage_$dyn_storage",
                           "typeString": "struct JoinRecord storage ref[] storage ref"
@@ -6848,22 +7056,22 @@
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
-                      "memberLocation": "6063:6:0",
+                      "memberLocation": "6060:6:0",
                       "memberName": "length",
                       "nodeType": "MemberAccess",
-                      "src": "6042:27:0",
+                      "src": "6039:27:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "src": "6038:31:0",
+                    "src": "6035:31:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "id": 533,
+                  "id": 551,
                   "initializationExpression": {
                     "assignments": [
                       503
@@ -6874,10 +7082,10 @@
                         "id": 503,
                         "mutability": "mutable",
                         "name": "i",
-                        "nameLocation": "6031:1:0",
+                        "nameLocation": "6028:1:0",
                         "nodeType": "VariableDeclaration",
-                        "scope": 533,
-                        "src": "6026:6:0",
+                        "scope": 551,
+                        "src": "6023:6:0",
                         "stateVariable": false,
                         "storageLocation": "default",
                         "typeDescriptions": {
@@ -6888,7 +7096,7 @@
                           "id": 502,
                           "name": "uint",
                           "nodeType": "ElementaryTypeName",
-                          "src": "6026:4:0",
+                          "src": "6023:4:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
@@ -6907,7 +7115,7 @@
                       "kind": "number",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "6035:1:0",
+                      "src": "6032:1:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_rational_0_by_1",
                         "typeString": "int_const 0"
@@ -6915,7 +7123,7 @@
                       "value": "0"
                     },
                     "nodeType": "VariableDeclarationStatement",
-                    "src": "6026:10:0"
+                    "src": "6023:10:0"
                   },
                   "loopExpression": {
                     "expression": {
@@ -6927,14 +7135,14 @@
                       "nodeType": "UnaryOperation",
                       "operator": "++",
                       "prefix": false,
-                      "src": "6071:3:0",
+                      "src": "6068:3:0",
                       "subExpression": {
                         "id": 511,
                         "name": "i",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 503,
-                        "src": "6071:1:0",
+                        "src": "6068:1:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -6947,10 +7155,10 @@
                     },
                     "id": 513,
                     "nodeType": "ExpressionStatement",
-                    "src": "6071:3:0"
+                    "src": "6068:3:0"
                   },
                   "nodeType": "ForStatement",
-                  "src": "6021:202:0"
+                  "src": "6018:383:0"
                 },
                 {
                   "expression": {
@@ -6960,18 +7168,18 @@
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         },
-                        "id": 537,
+                        "id": 555,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "leftExpression": {
-                          "id": 535,
-                          "name": "amount",
+                          "id": 553,
+                          "name": "sum",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 499,
-                          "src": "6240:6:0",
+                          "src": "6418:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
@@ -6981,21 +7189,21 @@
                         "operator": ">",
                         "rightExpression": {
                           "hexValue": "30",
-                          "id": 536,
+                          "id": 554,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
                           "kind": "number",
                           "lValueRequested": false,
                           "nodeType": "Literal",
-                          "src": "6249:1:0",
+                          "src": "6424:1:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_rational_0_by_1",
                             "typeString": "int_const 0"
                           },
                           "value": "0"
                         },
-                        "src": "6240:10:0",
+                        "src": "6418:7:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -7003,14 +7211,14 @@
                       },
                       {
                         "hexValue": "61206163746976697479206973206e6f74206a6f696e",
-                        "id": 538,
+                        "id": 556,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "6252:24:0",
+                        "src": "6427:24:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_3af9fe5bc87ff7d21dac238f1dcd149f9ae2852c1f3234783304d058d8436698",
                           "typeString": "literal_string \"a activity is not join\""
@@ -7029,7 +7237,7 @@
                           "typeString": "literal_string \"a activity is not join\""
                         }
                       ],
-                      "id": 534,
+                      "id": 552,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -7037,13 +7245,13 @@
                         4294967278
                       ],
                       "referencedDeclaration": 4294967278,
-                      "src": "6232:7:0",
+                      "src": "6410:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 539,
+                    "id": 557,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -7052,27 +7260,86 @@
                     "nameLocations": [],
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "6232:45:0",
+                    "src": "6410:42:0",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 540,
+                  "id": 558,
                   "nodeType": "ExpressionStatement",
-                  "src": "6232:45:0"
+                  "src": "6410:42:0"
+                },
+                {
+                  "expression": {
+                    "id": 563,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "expression": {
+                        "id": 559,
+                        "name": "activity",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 468,
+                        "src": "6462:8:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Activity_$79_storage_ptr",
+                          "typeString": "struct Activity storage pointer"
+                        }
+                      },
+                      "id": 561,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberLocation": "6471:12:0",
+                      "memberName": "currentMoney",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 68,
+                      "src": "6462:21:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "-=",
+                    "rightHandSide": {
+                      "id": 562,
+                      "name": "sum",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 499,
+                      "src": "6487:3:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "6462:28:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 564,
+                  "nodeType": "ExpressionStatement",
+                  "src": "6462:28:0"
                 },
                 {
                   "expression": {
                     "arguments": [
                       {
-                        "id": 547,
-                        "name": "amount",
+                        "id": 571,
+                        "name": "sum",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 499,
-                        "src": "6316:6:0",
+                        "src": "6529:3:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -7090,26 +7357,26 @@
                         "arguments": [
                           {
                             "expression": {
-                              "id": 543,
+                              "id": 567,
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
                               "referencedDeclaration": 4294967281,
-                              "src": "6295:3:0",
+                              "src": "6508:3:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
                                 "typeString": "msg"
                               }
                             },
-                            "id": 544,
+                            "id": 568,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
                             "lValueRequested": false,
-                            "memberLocation": "6299:6:0",
+                            "memberLocation": "6512:6:0",
                             "memberName": "sender",
                             "nodeType": "MemberAccess",
-                            "src": "6295:10:0",
+                            "src": "6508:10:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address",
                               "typeString": "address"
@@ -7123,27 +7390,27 @@
                               "typeString": "address"
                             }
                           ],
-                          "id": 542,
+                          "id": 566,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
                           "lValueRequested": false,
                           "nodeType": "ElementaryTypeNameExpression",
-                          "src": "6287:8:0",
+                          "src": "6500:8:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_type$_t_address_payable_$",
                             "typeString": "type(address payable)"
                           },
                           "typeName": {
-                            "id": 541,
+                            "id": 565,
                             "name": "address",
                             "nodeType": "ElementaryTypeName",
-                            "src": "6287:8:0",
+                            "src": "6500:8:0",
                             "stateMutability": "payable",
                             "typeDescriptions": {}
                           }
                         },
-                        "id": 545,
+                        "id": 569,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -7152,28 +7419,28 @@
                         "nameLocations": [],
                         "names": [],
                         "nodeType": "FunctionCall",
-                        "src": "6287:19:0",
+                        "src": "6500:19:0",
                         "tryCall": false,
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
                         }
                       },
-                      "id": 546,
+                      "id": 570,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
-                      "memberLocation": "6307:8:0",
+                      "memberLocation": "6520:8:0",
                       "memberName": "transfer",
                       "nodeType": "MemberAccess",
-                      "src": "6287:28:0",
+                      "src": "6500:28:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_transfer_nonpayable$_t_uint256_$returns$__$",
                         "typeString": "function (uint256)"
                       }
                     },
-                    "id": 548,
+                    "id": 572,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -7182,21 +7449,21 @@
                     "nameLocations": [],
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "6287:36:0",
+                    "src": "6500:33:0",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 549,
+                  "id": 573,
                   "nodeType": "ExpressionStatement",
-                  "src": "6287:36:0"
+                  "src": "6500:33:0"
                 }
               ]
             },
             "functionSelector": "8ab0f333",
-            "id": 551,
+            "id": 575,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -7214,7 +7481,7 @@
                   "name": "id",
                   "nameLocation": "5579:2:0",
                   "nodeType": "VariableDeclaration",
-                  "scope": 551,
+                  "scope": 575,
                   "src": "5574:7:0",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -7243,57 +7510,57 @@
               "parameters": [],
               "src": "5592:0:0"
             },
-            "scope": 573,
-            "src": "5550:780:0",
+            "scope": 597,
+            "src": "5550:990:0",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           },
           {
             "body": {
-              "id": 571,
+              "id": 595,
               "nodeType": "Block",
-              "src": "6479:95:0",
+              "src": "6689:95:0",
               "statements": [
                 {
                   "expression": {
                     "components": [
                       {
                         "baseExpression": {
-                          "id": 561,
+                          "id": 585,
                           "name": "personalJoinRecords",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 108,
-                          "src": "6497:19:0",
+                          "src": "6707:19:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_mapping$_t_address_$_t_array$_t_struct$_JoinRecord_$92_storage_$dyn_storage_$",
                             "typeString": "mapping(address => struct JoinRecord storage ref[] storage ref)"
                           }
                         },
-                        "id": 564,
+                        "id": 588,
                         "indexExpression": {
                           "expression": {
-                            "id": 562,
+                            "id": 586,
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 4294967281,
-                            "src": "6517:3:0",
+                            "src": "6727:3:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
                               "typeString": "msg"
                             }
                           },
-                          "id": 563,
+                          "id": 587,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
-                          "memberLocation": "6521:6:0",
+                          "memberLocation": "6731:6:0",
                           "memberName": "sender",
                           "nodeType": "MemberAccess",
-                          "src": "6517:10:0",
+                          "src": "6727:10:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
@@ -7304,7 +7571,7 @@
                         "isPure": false,
                         "lValueRequested": false,
                         "nodeType": "IndexAccess",
-                        "src": "6497:31:0",
+                        "src": "6707:31:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_struct$_JoinRecord_$92_storage_$dyn_storage",
                           "typeString": "struct JoinRecord storage ref[] storage ref"
@@ -7312,40 +7579,40 @@
                       },
                       {
                         "baseExpression": {
-                          "id": 565,
+                          "id": 589,
                           "name": "personalActivitieRecords",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 113,
-                          "src": "6530:24:0",
+                          "src": "6740:24:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_mapping$_t_address_$_t_array$_t_uint256_$dyn_storage_$",
                             "typeString": "mapping(address => uint256[] storage ref)"
                           }
                         },
-                        "id": 568,
+                        "id": 592,
                         "indexExpression": {
                           "expression": {
-                            "id": 566,
+                            "id": 590,
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 4294967281,
-                            "src": "6555:3:0",
+                            "src": "6765:3:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
                               "typeString": "msg"
                             }
                           },
-                          "id": 567,
+                          "id": 591,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
-                          "memberLocation": "6559:6:0",
+                          "memberLocation": "6769:6:0",
                           "memberName": "sender",
                           "nodeType": "MemberAccess",
-                          "src": "6555:10:0",
+                          "src": "6765:10:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
@@ -7356,60 +7623,60 @@
                         "isPure": false,
                         "lValueRequested": false,
                         "nodeType": "IndexAccess",
-                        "src": "6530:36:0",
+                        "src": "6740:36:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_uint256_$dyn_storage",
                           "typeString": "uint256[] storage ref"
                         }
                       }
                     ],
-                    "id": 569,
+                    "id": 593,
                     "isConstant": false,
                     "isInlineArray": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "nodeType": "TupleExpression",
-                    "src": "6496:71:0",
+                    "src": "6706:71:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$_t_array$_t_struct$_JoinRecord_$92_storage_$dyn_storage_$_t_array$_t_uint256_$dyn_storage_$",
                       "typeString": "tuple(struct JoinRecord storage ref[] storage ref,uint256[] storage ref)"
                     }
                   },
-                  "functionReturnParameters": 560,
-                  "id": 570,
+                  "functionReturnParameters": 584,
+                  "id": 594,
                   "nodeType": "Return",
-                  "src": "6489:78:0"
+                  "src": "6699:78:0"
                 }
               ]
             },
             "functionSelector": "570eabc8",
-            "id": 572,
+            "id": 596,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "myRecords",
-            "nameLocation": "6408:9:0",
+            "nameLocation": "6618:9:0",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 552,
+              "id": 576,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "6417:2:0"
+              "src": "6627:2:0"
             },
             "returnParameters": {
-              "id": 560,
+              "id": 584,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 556,
+                  "id": 580,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 572,
-                  "src": "6443:19:0",
+                  "scope": 596,
+                  "src": "6653:19:0",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -7418,28 +7685,28 @@
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 554,
+                      "id": 578,
                       "nodeType": "UserDefinedTypeName",
                       "pathNode": {
-                        "id": 553,
+                        "id": 577,
                         "name": "JoinRecord",
                         "nameLocations": [
-                          "6443:10:0"
+                          "6653:10:0"
                         ],
                         "nodeType": "IdentifierPath",
                         "referencedDeclaration": 92,
-                        "src": "6443:10:0"
+                        "src": "6653:10:0"
                       },
                       "referencedDeclaration": 92,
-                      "src": "6443:10:0",
+                      "src": "6653:10:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_JoinRecord_$92_storage_ptr",
                         "typeString": "struct JoinRecord"
                       }
                     },
-                    "id": 555,
+                    "id": 579,
                     "nodeType": "ArrayTypeName",
-                    "src": "6443:12:0",
+                    "src": "6653:12:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_array$_t_struct$_JoinRecord_$92_storage_$dyn_storage_ptr",
                       "typeString": "struct JoinRecord[]"
@@ -7449,13 +7716,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 559,
+                  "id": 583,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 572,
-                  "src": "6464:13:0",
+                  "scope": 596,
+                  "src": "6674:13:0",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -7464,18 +7731,18 @@
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 557,
+                      "id": 581,
                       "name": "uint",
                       "nodeType": "ElementaryTypeName",
-                      "src": "6464:4:0",
+                      "src": "6674:4:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "id": 558,
+                    "id": 582,
                     "nodeType": "ArrayTypeName",
-                    "src": "6464:6:0",
+                    "src": "6674:6:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
                       "typeString": "uint256[]"
@@ -7484,21 +7751,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "6442:36:0"
+              "src": "6652:36:0"
             },
-            "scope": 573,
-            "src": "6399:175:0",
+            "scope": 597,
+            "src": "6609:175:0",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 574,
-        "src": "1581:4995:0",
+        "scope": 598,
+        "src": "1581:5205:0",
         "usedErrors": []
       }
     ],
-    "src": "37:6541:0"
+    "src": "37:6751:0"
   },
   "compiler": {
     "name": "solc",
@@ -7506,7 +7773,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.11",
-  "updatedAt": "2023-01-07T09:13:14.403Z",
+  "updatedAt": "2023-01-08T04:19:44.289Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},
