@@ -1,11 +1,11 @@
 # cf_eth
 
-Contracts of crowdfunding system based on Ethereum (blockchain)
+基于以太坊（区块链）的众筹系统合约
 
-* web client base on vue/web3.js: <https://github.com/dengjiawen8955/cf_web>
+* 基于 vue/web3.js 的 Web 客户端: <https://github.com/dengjiawen8955/cf_web>
 
 ```go
-// Interface
+// 接口
 interface ICrowdfunding3 {
     function createActivity(uint targetMoney, uint dayNum, string memory data) external;
     function getActivity(uint id) external view returns (Activity memory);
@@ -17,9 +17,9 @@ interface ICrowdfunding3 {
 }
 ```
 
-## Quick Start for learning
+## 快速入门学习
 
-I suggest you to Remix to compile, deploy and test contracts.
+我建议你使用 Remix 来编译、部署和测试合约。
 
 * [Remix](https://remix.ethereum.org/)
 
@@ -29,9 +29,9 @@ I suggest you to Remix to compile, deploy and test contracts.
 
 ## deploy
 
-Use Remix VM to deploy contracts you don't need to pay gas fee.
+使用 Remix VM 部署合约无需支付 gas 费用。
 
-Deploy to other network you need choose other options
+部署到您需要的其他网络选择其他选项
 
 ![deploy1](https://markdown-1304103443.cos.ap-guangzhou.myqcloud.com/2022-02-0420230109183546.png)
 
@@ -39,18 +39,18 @@ Deploy to other network you need choose other options
 
 ### test
 
-After deploy, you can test your contract.
+部署后，您可以测试您的合约。
 
 ![test1](https://markdown-1304103443.cos.ap-guangzhou.myqcloud.com/2022-02-0420230109183719.png)
 
 ### ABI
 
-Copy ABI (Json) for client call.
+复制 ABI (Json) 以供客户端调用。
 
 ![abi1](https://markdown-1304103443.cos.ap-guangzhou.myqcloud.com/2022-02-0420230109183855.png)
 
-## Quick Start for development
+## 开发快速入门
 
-install development tools
+安装开发工具
 
 TODO:
