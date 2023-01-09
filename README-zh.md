@@ -1,5 +1,7 @@
 # cf_eth
 
+[English](./README.md) | 简体中文
+
 基于以太坊（区块链）的众筹系统合约
 
 * 基于 vue/web3.js 的 Web 客户端: <https://github.com/dengjiawen8955/cf_web>

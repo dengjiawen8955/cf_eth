@@ -1,5 +1,7 @@
 # cf_eth
 
+English | [简体中文](./README-zh.md)
+
 Contracts of crowdfunding system based on Ethereum (blockchain)
 
 * web client base on vue/web3.js: <https://github.com/dengjiawen8955/cf_web>
