@@ -5,8 +5,6 @@ pragma solidity >=0.7.0 <0.9.0;
 interface ICrowdfunding3 {
     // 发起一个众筹
     function createActivity(uint targetMoney, uint dayNum, string memory data) external;
-    // 查询众筹ID列表
-    function getActivitieIDs() external view returns (uint[] memory);
     // 查询众筹详情
     function getActivity(uint id) external view returns (Activity memory);
     // 批量查询众筹详情
@@ -37,10 +35,10 @@ struct Activity {
 struct JoinRecord {
     uint id;
     uint activityID;     // 捐款活动id
-    address joiner; // 捐款人
-    uint ts;        // 捐款时间
-    uint amount;    // 捐款金额
-    string comment; // 捐款留言
+    address joiner;      // 捐款人
+    uint ts;             // 捐款时间
+    uint amount;         // 捐款金额
+    string comment;      // 捐款留言
 }
 
 contract Crowdfunding3 {
@@ -77,15 +75,6 @@ contract Crowdfunding3 {
 
         // 添加个人发起的众筹活动
         personalActivitieRecords[msg.sender].push(activityID);
-    }
-
-    // 查询众筹ID列表
-    function getActivitieIDs() external view returns (uint[] memory) {
-        uint[] memory ids = new uint[](activityID);
-        for (uint i = 0; i < activityID; i++) {
-            ids[i] = i + 1;
-        }
-        return ids;
     }
 
     // 查询众筹详情
