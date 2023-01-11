@@ -27,7 +27,7 @@ I suggest you to Remix to compile, deploy and test contracts.
 
 ### compile
 
-![compile1](https://markdown-1304103443.cos.ap-guangzhou.myqcloud.com/2022-02-0420230109183117.png)
+![compile1](images/2022-02-0420230109183117.png)
 
 ## deploy
 
@@ -35,21 +35,21 @@ Use Remix VM to deploy contracts you don't need to pay gas fee.
 
 Deploy to other network you need choose other options
 
-![deploy1](https://markdown-1304103443.cos.ap-guangzhou.myqcloud.com/2022-02-0420230109183546.png)
+![deploy1](images/2022-02-0420230109183546.png)
 
-![deploy2](https://markdown-1304103443.cos.ap-guangzhou.myqcloud.com/2022-02-0420230109183620.png)
+![deploy2](images/2022-02-0420230109183620.png)
 
 ### test
 
 After deploy, you can test your contract.
 
-![test1](https://markdown-1304103443.cos.ap-guangzhou.myqcloud.com/2022-02-0420230109183719.png)
+![test1](images/2022-02-0420230109183719.png)
 
 ### ABI
 
 Copy ABI (Json) for client call.
 
-![abi1](https://markdown-1304103443.cos.ap-guangzhou.myqcloud.com/2022-02-0420230109183855.png)
+![abi1](images/2022-02-0420230109183855.png)
 
 ## Quick Start for development
 

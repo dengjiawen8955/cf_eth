@@ -27,7 +27,7 @@ interface ICrowdfunding3 {
 
 ### compile
 
-![compile1](https://markdown-1304103443.cos.ap-guangzhou.myqcloud.com/2022-02-0420230109183117.png)
+![compile1](images/2022-02-0420230109183117.png)
 
 ## deploy
 
@@ -35,21 +35,21 @@ interface ICrowdfunding3 {
 
 部署到您需要的其他网络选择其他选项
 
-![deploy1](https://markdown-1304103443.cos.ap-guangzhou.myqcloud.com/2022-02-0420230109183546.png)
+![deploy1](images/2022-02-0420230109183546.png)
 
-![deploy2](https://markdown-1304103443.cos.ap-guangzhou.myqcloud.com/2022-02-0420230109183620.png)
+![deploy2](images/2022-02-0420230109183620.png)
 
 ### test
 
 部署后，您可以测试您的合约。
 
-![test1](https://markdown-1304103443.cos.ap-guangzhou.myqcloud.com/2022-02-0420230109183719.png)
+![test1](images/2022-02-0420230109183719.png)
 
 ### ABI
 
 复制 ABI (Json) 以供客户端调用。
 
-![abi1](https://markdown-1304103443.cos.ap-guangzhou.myqcloud.com/2022-02-0420230109183855.png)
+![abi1](images/2022-02-0420230109183855.png)
 
 ## 开发快速入门
 
